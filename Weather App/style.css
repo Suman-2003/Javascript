@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,300;1,9..40,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #06283D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.container{
+    height: 105px;
+    width: 420px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid black;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.search-box{
+    display: flex;
+    justify-content: space-between;
+}
+.search-box i{
+    margin: 33px 10px 0px 15px;
+    font-size: 35px;
+}
+.search-box i:hover{
+    font-size: 45px;
+}   
+.search-box input{
+    width: 80%;
+    height: 80px;
+    padding: 10px 0px 0px 32px;
+    font-weight: 800;
+    
+}
+.search-box input::placeholder{
+    font-size: 25px;
+    color: #000001;
+}
+.search-box button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 35px;
+    margin: 10px 15px 0px 10px;
+
+}
+.search-box button:hover{
+      font-size: 45px;
+}
+input{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    width: 300px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+.not-found{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0px 0px 27px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+.not-found p{
+    margin: 20px 0 0 30px;
+    
+}
+.weather-box{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-box img{
+    width: 200px;
+}
+
+.weather-details{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 60px 0px 60px;
+}
+.temperature{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.description{
+    font-size: 35px;
+}
+.wind span{
+    margin-left: 3px;
+}
+.humidty span{
+    margin-left: 15px;
+}
+.text{
+    display: flex;
+}
+.weather-box,.weather-details{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    scale: 0;
+    opacity: 0;
+}
+.fade-in{
+    transition: 0.5s fadeIn forwards;
+    transition: 0.5s;
+}
+
+
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+    
+}
