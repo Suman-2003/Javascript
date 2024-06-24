@@ -15,7 +15,7 @@ async function checkWeather(city){
     var data = await response.json();
 
    if(data.cod === '404'){
-    container.style.height = '480px';
+    container.style.height = '500px';
     weatherBox.style.display = 'none';
     weatherDetails.style.display = 'none';
     error404.style.display = 'block';
@@ -68,7 +68,7 @@ async function checkWeather(city){
     weatherDetails.style.display = '';
     weatherBox.classList.add('fadeIn');
     weatherDetails.classList.add('fadeIn');
-    container.style.height = '590px';
+    container.style.height = '540px';
     error404.style.opacity = 1;
     error404.style.scale = 1;
     weatherBox.style.opacity = 1;
